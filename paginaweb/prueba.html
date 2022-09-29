@@ -1,0 +1,12 @@
+<?php
+$username = "root";
+$password = "";
+$database = "instituciones";
+
+$mysqli = new mysqli("localhost", $username, $password, $database);
+$Consulta = "SHOW TABLE residencias_servicio_social";
+
+ if (!$resultado = $mysqli->query($consulta)){
+ 	echo "no se encontro registro.";
+ 	exit;
+?>
